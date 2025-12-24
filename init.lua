@@ -6,8 +6,6 @@ local function compat_alias(old, new)
 	end
 end
 
-compat_alias("glooptest:treasure_chest_1", "air")
-compat_alias("glooptest:treasure_chest_2", "air")
-compat_alias("glooptest:treasure_chest_3", "air")
-compat_alias("glooptest:treasure_chest_4", "air")
-compat_alias("glooptest:treasure_chest_5", "air")
+for i = 1,5,1 do
+	compat_alias("glooptest:treasure_chest_"..tostring(i), "default:chest")
+end
